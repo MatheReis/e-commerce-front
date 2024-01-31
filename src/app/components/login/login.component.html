@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="side-one">
+    <div class="logo-container">
+      <img class="side-one-logo" src="../../../assets/images/Logo.png" />
+    </div>
+    <img class="side-one-image" src="../../../assets/images/cadeira.png" />
+  </div>
+
+  <div class="side-two">
+    <div class="container-login">
+      <h2 class="side-two-title">Sign In</h2>
+      <p class="side-two-subtitle">
+        Don’t have an account yet? <a href="#" class="sign-up-link">Sign Up</a>
+      </p>
+
+      <form>
+        <div class="form-group">
+          <label class="label-form" for="email">Email:</label>
+          <input
+            class="input-form"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="label-form" for="password">Senha:</label>
+          <input
+            class="input-form"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+
+        <div class="remember-forgot">
+          <label class="remember-checkbox">
+            <input type="checkbox" />
+            <div class="custom-checkbox">
+              <span class="custom-checkbox-icon">✓</span>
+            </div>
+            Lembrar senha
+          </label>
+
+          <a class="forgot-password-link" href="#">Forgot Password?</a>
+        </div>
+      </form>
+
+      <button (click)="redirectToHome()" class="button-login" type="submit">
+        Sign In
+      </button>
+    </div>
+  </div>
+</div>
